@@ -4,10 +4,17 @@
 }
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #16242b;
 }
 p{
     color: gray;
+    font-size: 20px;
+}
+h4{
+    color: white;
+}
+h2{
+    color: white;
 }
 .navbar-brand img {
     width:100px;
@@ -19,18 +26,15 @@ p{
    border-bottom: 2px solid #7cacf3;
 }
 .nav-link{
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 .nav-link:hover{
     color: #7cacf3 !important;
+    text-decoration: underline;
 
 }
-.navbar ul{
-    padding-right: 80px;
-}
-.navbar .navbar-brand{
-    padding-left: 80px;
-}
+
+
 /*------------------------home----------------*/
 .home{
     background-image: url(../images/csjpg.jpg);
@@ -59,13 +63,12 @@ p{
     6%{content: 'fro|';}
     8%{content: 'fron|';}
     10%{content: 'front|';}
-    14%{content: 'front- |';}
-    18%{content: 'front-e|';}
-    20%{content: 'front-en|';}
-    26%{content: 'front-end|';}
-    30%{content: 'front-en|';}
-    32%{content: 'front-e|';}
-    35%{content: 'front-|';}
+    15%{content: 'fronte|';}
+    20%{content: 'fronten|';}
+    25%{content: 'frontend|';}
+    30%{content: 'fronten|';}
+    32%{content: 'fronte|';}
+    35%{content: 'front|';}
     39%{content: 'front|';}
     41%{content: 'fron|';}
     44%{content: 'fro|';}
@@ -98,8 +101,11 @@ p{
     /* padding: 10px; */
   /* margin-top: 1000px; */
 }
+.home_para{
+    font-size: 25px;
+}
 
-.button-link{
+/* .button-link{
     background-color: transparent;
     border: 0.5px solid white;
     transition: all 0.5s;
@@ -117,7 +123,7 @@ p{
 .button-link:hover a{
     
     color:  #7cacf3;
-}
+} */
 /*------------------------about--------------------------------------------------*/
 .about-icons{
     font-size: 30px;
@@ -137,6 +143,8 @@ p{
 }
 .card{
     transition: 1s;
+    overflow: hidden;
+    box-shadow: 0 0 20px 15px rgba(7, 11, 106, 0.4);
 }
 .card-body{
     text-align: center;
@@ -145,6 +153,16 @@ p{
     margin: 10px;
     width: 100%;
     height: 5%;
+}
+.skills_desc{
+    /* padding: 3px;
+    margin: 2px; */
+    background-color: rgba(132, 83, 216, 0.082);
+    border-radius: 10px;
+    color: #854ce6;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
 }
 /* /////////////////////////////// */
 .pr{
@@ -155,7 +173,10 @@ p{
 }
 .projects_word{
     padding-top: 30px;
-text-decoration: underline;    
+/* text-decoration: underline;     */
+}
+.project_para{
+    font-size: 20px;
 }
 
 .card-img-top {
@@ -172,15 +193,16 @@ text-decoration: underline;
   
   .overlay-text {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition:  2s;
+    /* background-color: white; */
   }
   .overlay-text a{
-    color:#7cacf3;
-    border: 1px solid #7cacf3;
+    color :#854ce6;
+    border: 1px solid #854ce6;
     padding: 7px;
     border-radius: 5px;
     text-decoration: none;
@@ -203,15 +225,55 @@ text-decoration: underline;
   }
   
   .overlay:hover::before {
-    opacity: 1;
+    opacity: 1; 
   }
   
   /* .overlay:hover .card-img-top {
     transform: scale(1.1);
   } */
+  .card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 12px 4px rgba(246, 244, 244, 0.4);  }
   .card:hover img{
     transform:scale(1.07) ;
   }
+/* .skill-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px
+}
+  .skill-item {
+    align-items: center;
+    border: 1px solid #f2f3f4;
+    border-radius: 12px;
+    color: #171b1f;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 8px;
+    padding: 12px 16px;
+    width: 10px;
+} */
+.card.skills{
+    background-color: transparent;
+    color: white;
+}
+.skill-item{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(20, 8, 59);
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.skill-item span{
+   color: gray;
+}
+.card.seif{
+    background-color: transparent;
+}
     /* start footer /////////////////////////////////////////////*/
 .arrow{
     font-size: 40px;
@@ -219,7 +281,7 @@ text-decoration: underline;
     padding: 10px;
 }
 .footerback{
-    background-color: #152a4a;
+    background-color: #111e33;
 }
 .links{
     padding-top: 20px;
@@ -227,9 +289,9 @@ text-decoration: underline;
 .link-item{
     padding: 10px;
     font-size: 30px;
-    border: 2px solid #32445f;
+    /* border: 2px solid #32445f; */
     margin: 10px;
-    background-color: #32445f;
+    /* background-color: #32445f; */
     transition: 1s;
 
 }
@@ -271,7 +333,4 @@ text-decoration: underline;
 }
 .permission{
     margin-top: 10px;
-}
-.background_projects{
-    background-color: rgb(232, 230, 230) ;
 }
